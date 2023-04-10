@@ -1,0 +1,24 @@
+{
+  "name": "18_social_network_api_nosql",
+  "version": "1.0.0",
+  "description": "Project Repo: [Github-repo](https://github.com/timothymichaelcook/12_Employee_Tracker)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timothymichaelcook/18_social_network_api_nosql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timothymichaelcook/18_social_network_api_nosql/issues"
+  },
+  "homepage": "https://github.com/timothymichaelcook/18_social_network_api_nosql#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9"
+  }
+}
