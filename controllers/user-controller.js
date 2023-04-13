@@ -101,3 +101,4 @@ const userController = {
       .catch((err) => res.json(err));
   },
 };
+module.exports = userController;
