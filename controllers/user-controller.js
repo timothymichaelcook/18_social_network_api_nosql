@@ -64,12 +64,25 @@ const userController = {
         if (!dbUserData) {
           return res.status(404).json({ message: "No user with this id!" });
         }
-        // BONUS: get ids of user's `thoughts` and delete them all
-        // $in to find specific things
         return Thought.deleteMany({ _id: { $in: dbUserData.thoughts } });
       })
       .then(() => {
         res.json({ message: "User and associated thoughts deleted!" });
+      })
+      .catch((err) => res.json(err));
+  },
+  addFriend({ params }, res) {
+    User.findOneAndUpdate(
+      { _id: params.userId },
+      { $addToSet: { friends: params.friendId } },
+      { new: true, runValidators: true }
+    )
+      .then((dbUserData) => {
+        if (!dbUserData) {
+          res.status(404).json({ message: "No user with this id" });
+          return;
+        }
+        res.json(dbUserData);
       })
       .catch((err) => res.json(err));
   },
