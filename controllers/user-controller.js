@@ -51,7 +51,7 @@ const userController = {
     })
       .then((dbUserData) => {
         if (!dbUserData) {
-          res.status(404).json({ message: "No user found with this id!" });
+          res.status(404).json({ message: "No user found with this id." });
           return;
         }
         res.json(dbUserData);
@@ -67,7 +67,7 @@ const userController = {
         return Thought.deleteMany({ _id: { $in: dbUserData.thoughts } });
       })
       .then(() => {
-        res.json({ message: "User and associated thoughts deleted!" });
+        res.json({ message: "User and associated thoughts deleted." });
       })
       .catch((err) => res.json(err));
   },
@@ -79,7 +79,7 @@ const userController = {
     )
       .then((dbUserData) => {
         if (!dbUserData) {
-          res.status(404).json({ message: "No user with this id" });
+          res.status(404).json({ message: "No user with this id." });
           return;
         }
         res.json(dbUserData);
@@ -94,7 +94,7 @@ const userController = {
     )
       .then((dbUserData) => {
         if (!dbUserData) {
-          return res.status(404).json({ message: "No user with this id!" });
+          return res.status(404).json({ message: "No user with this id." });
         }
         res.json(dbUserData);
       })
