@@ -38,7 +38,7 @@ University of Richmond Coding Bootcamp
 
 MIT License
 
-## Screenshots
+## Video
 
 ![Project Video](./assets/video_1.gif)
 
