@@ -38,9 +38,9 @@ University of Richmond Coding Bootcamp
 
 MIT License
 
-## Screenshots REDO
+## Screenshots
 
-![Project Video](./assets/video.gif)
+![Project Video](./assets/video_1.gif)
 
 ## Contact
 
